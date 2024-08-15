@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    top: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+body {
+    background-image: linear-gradient(90deg, blue, grey);
+    font-family: "Tinos", serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#section-1, #section2 {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#input-data {
+    background-color: #2da7a5;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#table-data {
+    background-image: linear-gradient(80deg, skyblue, orange);
+}
+.table-responsive {
+    overflow-x: auto; /* Enables horizontal scroll */
+    -webkit-overflow-scrolling: touch; /* Allows for smooth scrolling on touch devices */
+}
+
+@media (min-width: 768px) {
+    #input-data, #table-data {
+        width: 100%;
+    }
+}
